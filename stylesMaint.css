@@ -1,0 +1,124 @@
+
+.header {
+  font-size: smaller;
+  /*max-width: fit-content;*/
+  text-align: center;
+  padding: 0px 4px;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #1b9dde;
+  background-color:#F5EDDD;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 8px;
+
+  font-size: smaller;
+  max-width: fit-content;
+  text-align: center;
+  padding: 0px 4px;
+
+}
+
+legend {
+  background-color: #1b9dde; 
+  color:#F5EDDD;
+  
+  padding: 3px 10px;
+  max-width: max-content;
+}
+
+fieldset {
+  font-size: medium;
+  max-height: min-content;
+  background-color: rgba(94, 91, 91, 0.062);
+  max-width: 200px;
+  margin: auto;
+  border-color: #1b9dde;
+}
+
+
+.button {
+  background-color: white;
+  border: 1px solid #1b9dde;
+  border-radius: 2px;
+  color: #1b9dde;
+  font-size: 14px;
+  height: 36px;
+  line-height: 36px;
+  margin: 6px 0;
+  padding: 0 26px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  vertical-align: middle;
+}
+
+input[type='radio']:after {
+  
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  content:'';
+  background-color: #d1d3d1;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid  #1b9dde;
+  transition: all .5s ease-in-out;
+}
+
+
+
+input[type='radio']:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  content:'';
+  background-color: #31387eea;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid  #1b9dde;
+  transition: all .5s ease-in-out;
+}
+
+.radio-click {
+  float: left;
+  margin-left: 12%;
+}
+
+.radio-text {
+  text-align: left;
+  margin-left: 30px;
+}
+
+table, td, tr {
+  border: 1px solid black;
+  width: max-content;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:  #1b9dde;
+  color: white;
+}
+
