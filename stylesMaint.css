@@ -1,101 +1,140 @@
-
-.header {
-  font-size: smaller;
-  /*max-width: fit-content;*/
-  text-align: center;
-  padding: 0px 4px;
+:root {
+  --textColor: #1b9dde;
+  --buttonColor: #c4cfe2;
+  --backColor: #e8e8e8;
+  --boxColor: #fcfcef;
 }
 
 .body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   color: #1b9dde;
-  background-color:#F5EDDD;
+  background-color: var(--backColor);
   margin: 0 auto;
-  max-width: 900px;
-  padding: 0 8px;
-
-  font-size: smaller;
+  font-size: medium;
   max-width: fit-content;
   text-align: center;
-  padding: 0px 4px;
-
+  padding: 0 4px;
 }
 
 legend {
-  background-color: #1b9dde; 
+  background-color: #1b9dde;
   color:#F5EDDD;
-  
   padding: 3px 10px;
-  max-width: max-content;
 }
 
-fieldset {
-  font-size: medium;
-  max-height: min-content;
-  background-color: rgba(94, 91, 91, 0.062);
-  max-width: 200px;
-  margin: auto;
-  border-color: #1b9dde;
-}
-
-
-.button {
-  background-color: white;
-  border: 1px solid #1b9dde;
-  border-radius: 2px;
-  color: #1b9dde;
-  font-size: 14px;
-  height: 36px;
-  line-height: 36px;
-  margin: 6px 0;
-  padding: 0 26px;
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: inherit;
+  font-size: smaller;
   text-align: center;
-  text-transform: uppercase;
-  transition: all .2s ease-in-out;
-  vertical-align: middle;
+  padding: 0 4px;
 }
+
+.dataRow {
+  background-color: #ececf6;
+}
+
+.dataRowEven {
+  background-color: #efe3e3;
+}
+
+.dataCell {
+  /*display: flex;*/
+  flex-flow: row wrap;
+
+  text-align: center;
+  align-items: flex-start;
+  color: var(--textColor);
+  border: 1px solid var(--textColor);
+  padding: 2px 6px;
+}
+
+.dataCell > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.editItemCell {
+  font-size: medium;
+  color: var(--textColor);
+  border: 0;
+  padding: 2px 20px;
+}
+
+.spacer {
+  font-size: medium;
+  color: var(--textColor);
+  border: 0;
+  padding: 2px 4px;
+}
+
+.newItemCell {
+  font-size: medium;
+  border: 2px solid var(--textColor);
+  color: var(--textColor);
+  padding: 2px 6px;
+  max-width: 125px;
+}
+
+.editButton {
+  font-size: medium;
+  border: 2px solid var(--textColor);
+  background-color: var(--buttonColor);
+  border-radius: 25px;
+  min-width: 100px;
+}
+
+.delButton {
+  font-size: medium;
+  border: 2px solid var(--textColor);
+  color: #c43333;
+  background-color: var(--buttonColor);
+  border-radius: 25px;
+  min-width: 100px;
+}
+
+.addButton {
+  font-size: medium;
+  border: 2px solid var(--textColor);
+  background-color: var(--buttonColor);
+  border-radius: 25px;
+  min-width: 100px;
+}
+
 
 input[type='radio']:after {
-  
   width: 10px;
   height: 10px;
   border-radius: 10px;
   content:'';
-  background-color: #d1d3d1;
+  background-color: var(--boxColor);
   display: inline-block;
   visibility: visible;
-  border: 2px solid  #1b9dde;
+  border: 2px solid #c1bdb9;
   transition: all .5s ease-in-out;
 }
-
-
 
 input[type='radio']:checked:after {
   width: 10px;
   height: 10px;
   border-radius: 10px;
   content:'';
-  background-color: #31387eea;
+  background-color: #869edb;
   display: inline-block;
   visibility: visible;
-  border: 2px solid  #1b9dde;
+  border: 2px solid #dc9696;
   transition: all .5s ease-in-out;
 }
 
-.radio-click {
-  float: left;
-  margin-left: 12%;
-}
 
-.radio-text {
-  text-align: left;
-  margin-left: 30px;
-}
-
-table, td, tr {
-  border: 1px solid black;
-  width: max-content;
+fieldset {
+  font-size: medium;
+  max-height: min-content;
+  background-color: var(--boxColor);
+  max-width: border-box;
+  border-color: var(--textColor);
 }
 
 .topnav {
@@ -105,7 +144,7 @@ table, td, tr {
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--boxColor);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -113,12 +152,11 @@ table, td, tr {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  color: #1b9dde;
 }
 
 .topnav a.active {
-  background-color:  #1b9dde;
-  color: white;
+  background-color: #1b9dde;
+  color: var(--boxColor);
 }
 
