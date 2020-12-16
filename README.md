@@ -6,20 +6,22 @@ All the screen apps are dynamic and are generated from a JSON schema with vanill
 
 A prototype schema is shown at the end of this note.
 
-By using ES6 to generate the table data and fields dynamically, the HTML migration to JSX and React components will be easier as will the eventual migration of raw data to the AWS data store.
+By using ES6 to generate the table data and fields dynamically, the HTML migration to JSX and React components will be easier as well the eventual migration of raw data to an AWS data store.
 
-Below are some sample screen shots with annotations showing fields that will contain changing data and any potential React components.
+Below are sample images of the HTML screens along with an annotated image highlighting the fields that contain changing data and potential React components.
+
 
 ## Depot Static Data
+![image info](./images/depotScreen.png)
 
-![image info](./images/depotScreenComp.png)
-
+## React Components & Dynamic Data
+![image info](./images/componentsMarked.png)
 ## Truck Static Data
-![image info](./images/truckScreenComp.png)
+![image info](./images/truckScreen.png)
 
 
 ## Appliance Static Data
-![image info](./images/applianceScreenComp.png)
+![image info](./images/applianceScreen.png)
 
 
 The static data JSON schema:
